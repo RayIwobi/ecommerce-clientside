@@ -1,0 +1,56 @@
+.search-container{
+    display: flex;
+    align-items: center;
+}
+
+.search-button{
+    position: relative;
+    margin-left: -70px;
+    margin-top: -9px;
+    font-size: 25px;
+    border: none;
+    background-color: rgb(230, 230, 230);
+    cursor: pointer;
+}
+
+.no-results-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 90px;
+}
+
+.no-results-page img{
+    width: 70px;
+}
+
+.no-results-page p{
+    font-size: 30px;
+}
+
+.top-link{
+    display: flex;
+    align-items: center;
+}
+
+.top-link img{
+    margin-left: 40px;
+}
+
+.top-link h4{
+    font-size: 19px;
+    font-style: italic;
+    color:blue
+}
+
+@media screen and (max-width:600px){
+    .top-link{
+        display: block;
+        margin-top: 30px;
+        text-align: center;
+    }
+    #product-searchresults{
+        width: 100vw;
+    }
+}

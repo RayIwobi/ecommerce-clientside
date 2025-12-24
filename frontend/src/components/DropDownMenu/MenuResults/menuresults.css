@@ -1,0 +1,31 @@
+@media screen and (max-width:600px){
+    .foodheader-mobilespace{
+        display: none;
+    }
+}
+
+.for-mobile{
+    display: none;
+}
+@media screen and (max-width:600px){
+    .for-mobile{
+        display: block;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .for-mobile img{
+        width: 30px;
+        height: 20px;
+    }
+    .for-mobile h4{
+        color: blue;
+    }
+    .for-mobile-link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

@@ -1,0 +1,215 @@
+
+.uni-header{
+    font-family:" Libre Baskerville";
+    font-weight: 400;
+}
+
+.uni-body{
+    font-family: "Poppins";
+}
+
+.mainabout-content{
+    max-width: 700px;
+    margin: 100px auto 100px  auto;
+    text-align: justify;
+}
+
+.aboutus-content h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.aboutus-content p{
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width:600px){
+    .mainabout-content{
+    max-width: 300px;
+    margin: 100px auto 100px  auto;
+    text-align: justify;
+}
+
+.aboutus-content h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.aboutus-content p{
+    margin-bottom: 25px;
+}
+
+}
+
+
+/* Second Section logo search account area */
+
+
+.logo-search-accountarea{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.search-bar{
+    display: flex;
+    align-items: center;
+}
+
+.middlebar-logo{
+    width: 100px;
+    height: 100px;
+}
+
+.nedifoods-title{
+    margin-left: -130px;
+    font-family:" Libre Baskerville";
+    font-size: 27px;
+}
+
+.search-bar input{
+    width: 600px;
+    height: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 15px;
+    padding-left: 15px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(225, 229, 233);
+}
+
+.search-bar input:focus{
+    outline: none;
+}
+
+.searchicon{
+    margin-left: -70px;
+    cursor: pointer;
+}
+
+.account-cart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cartIcon{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.bordertest{
+    border: 1px solid #e0e0e0;
+}
+
+.cart-count{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50px;
+    color: white;
+    position: absolute;
+    top: 95px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.link-border{
+    height: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* End Second Section logo search account area */
+
+
+/* FOR THE COMING SOON PAGES */
+.apparels-household{
+    width: 700px;
+    margin-left: 50px;
+    margin-top: 70px;
+    margin-bottom: 100vh;
+}
+
+.enquiries-section input{
+    display: block;
+    width: 60%;
+    height: 40px;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding-left: 5px;
+    color: black;
+    font-size: 16px;
+    border: 2px solid;
+    border-color: #f78d36;
+}
+
+.enquiries-section textarea{
+    border: 2px solid;
+    border-color: #f78d36;
+    font-size: 16px;
+}
+
+#submit{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 200px;
+}
+
+#submit:hover{
+    background-color: white;
+    border: 2px solid;
+    border-color: #f78d36;
+    color: black;
+}
+
+.enquiries-section input:focus{
+    outline: none;
+}
+
+.enquiries-section textarea{
+    width: 60%;
+    height: 70px;
+}
+
+.enquiries-section button{
+    width: 70px;
+    height: 40px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: rgb(49, 149, 49);
+    margin-top: 5px;
+}
+
+.enquiries-section button:hover{
+    background-color: rgb(8, 35, 8);
+}
+
+@media screen and (max-width:600px){
+    #textarea-support{
+        width: 90%;
+        border-radius: 5px;
+        margin-top: 6px;
+    }       
+}
+
+@media screen and (max-width:600px){
+    .apparels-household{
+        width: 300px;
+        font-size: 20px;
+
+    }
+}

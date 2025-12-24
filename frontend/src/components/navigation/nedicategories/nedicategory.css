@@ -1,0 +1,49 @@
+.dropdown {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-toggle {
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  min-width: 160px;
+  z-index: 10;
+  margin-left: -40px;
+
+}
+Link{
+  font-family: "Libre Baskerville";
+  font-weight: 200;
+}
+
+.dropdown-menu li {
+  list-style: none;
+  background-color: white;
+  font-size: 14px;
+
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  
+}
+
+.dropdown-menu li a:hover {
+  background-color: #f0f0f0;
+}
+
+#nedigroup{
+  font-family: "Libre Baskerville";
+  font-weight: 200;
+}

@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+}
+
+.main-containeru{
+    width: 900;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+
+.main-containeru textarea{
+    height: 100px;
+    margin-top: 2px;
+}
+
+.display-section{
+    display: block;
+    align-items: center;
+}
+
+.display-section img{
+    width: 150px;
+    height: 150px;
+}
+
+.table-section th{
+    width: 400px;
+    margin: 15px;
+
+}
+.table-section td{
+    width: 400px;
+    margin: 15px;
+}
+
+.description{
+    max-width: 50px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* CODE FOR PRODUCT UPDATE */
+.update-container{
+    width: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.update-container input{
+    margin: 6px;
+    width: 300px;
+    height: 30px;
+}
+
+.update-container textarea{
+    width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.button-controls{
+    width: 200px;
+    display: flex;
+    margin-bottom: 50px;
+    
+}
+
+.button-controls button{
+    margin: 10px;
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    color: rgb(22, 22, 156);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;    
+}
+.canni{
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: rgb(22, 22, 156);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;    
+}
+
+.upload-section{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 25px;
+}
+
+.upload-section button{
+    background-color:#FCAE1E;
+    color: white;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-section button:hover{
+    background-color:white;
+    color: black;
+    font-size: 15px;
+    border: 2px solid orange;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.upload-section button{
+    background-color:#FCAE1E;
+    color: white;
+    font-size: 15px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Styling for upload link area */
+.uploadarea-product-link{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: black;
+}
+
+.uploadarea-product-link a{
+    font-size: 14px;
+}
+
+#uploads-container{
+    width: 300px;
+}
+
+#uploads-container select{
+    width: 300px;
+    height: 30px;
+    border: 3px solid orange;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+#uploads-container textarea{
+    width: 300px;
+    margin-top: 15px;
+    border: 3px solid orange;
+    border-radius: 5px;
+    font-size: 14px;
+    padding-left: 5px;
+}
+
+#uploadsproduct-display{
+    width: 500px;
+}
+
+#uploadsproduct-display th, td:hover{
+    background-color: bisque;
+}
+
+.prodnme{
+    width: 100px;
+}
+
+.tbody td{
+    margin-bottom: 10px;
+}
