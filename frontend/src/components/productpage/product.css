@@ -1,33 +1,33 @@
-.main-productcontent{
+.main-productcontent {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
     max-width: 1000px;
 }
 
-@media screen and (max-width:600px){
-    .main-productcontent{
+@media screen and (max-width:600px) {
+    .main-productcontent {
         width: 300px;
     }
 }
 
-.horizontal-rule{
+.horizontal-rule {
     width: 100%;
 }
 
-.inner-productcontent{
+.inner-productcontent {
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
     flex-wrap: wrap;
 }
 
-.product-image{
-position: relative;
-overflow: hidden;
+.product-image {
+    position: relative;
+    overflow: hidden;
 }
 
-.product-image img{
+.product-image img {
     width: 500px;
     height: 600px;
     border-radius: 15px;
@@ -37,7 +37,7 @@ overflow: hidden;
     overflow: hidden;
 }
 
-.product-image:hover img{
+.product-image:hover img {
     max-width: 600px;
     -moz-transform: scale(0.5);
     -webkit-transform: scale(0.5);
@@ -46,27 +46,28 @@ overflow: hidden;
     max-height: 700px;
 }
 
-@media screen and (max-width:600px){
-    .product-image img{
+@media screen and (max-width:600px) {
+    .product-image img {
         max-width: 300px;
         max-height: 300px;
         border-radius: 15px;
     }
 }
 
-.buymore-title{
+.buymore-title {
     margin-left: 65px;
     font-family: "Libre Baskerville";
     font-weight: 400;
 }
 
-@media screen and (max-width:600px){
-    .buymore-title{
+@media screen and (max-width:600px) {
+    .buymore-title {
         margin-left: 30px;
         font-size: 19px;
         margin-bottom: -20px;
     }
-    #otherproducts{
+
+    #otherproducts {
         font-family: 'Libre Baskerville';
         font-size: 19px;
         margin-bottom: 15px;
@@ -75,43 +76,45 @@ overflow: hidden;
         margin-left: 5px;
     }
 }
-.product-description{
+
+.product-description {
     display: block;
     max-width: 450px;
     font-family: 'Poppins';
 }
-    .product-description h3{
-        font-family: 'Libre Baskerville';
-        font-weight: 400;
-        font-size: 25px;
-    }
+
+.product-description h3 {
+    font-family: 'Libre Baskerville';
+    font-weight: 400;
+    font-size: 25px;
+}
 
 
-.product-description a{
+.product-description a {
     text-decoration: none;
     color: black;
 }
 
-.product-title{
+.product-title {
     font-size: 28px;
     margin-bottom: 20px;
     font-family: 'Libre Baskerville';
 }
 
-.product-category{
+.product-category {
     font-weight: 300;
-    font-size: 16px;    
+    font-size: 16px;
     margin-bottom: 20px;
 }
 
-.product-price{
+.product-price {
     font-size: 18px;
     display: flex;
     align-items: center;
     margin-bottom: 40px;
 }
 
-.product-price h5{
+.product-price h5 {
     font-size: 18px;
     color: red;
     font-weight: 400;
@@ -119,7 +122,7 @@ overflow: hidden;
     margin-left: 15px;
 }
 
-.add-to-cartButton{
+.add-to-cartButton {
     width: 300px;
     height: 30px;
     background-color: orange;
@@ -132,62 +135,63 @@ overflow: hidden;
     margin-bottom: 40px;
     cursor: pointer;
 
-    box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.74);
-    -webkit-box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.74);
-    -moz-box-shadow: 1px 1px 2px 2px rgba(0,0,0,0.74);
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.74);
+    -moz-box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.74);
 }
 
 .add-to-cartButton:active {
-    transform: scale(0.95); /* Slightly shrink the image */
+    transform: scale(0.95);
+    /* Slightly shrink the image */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-.product-details h3{
+.product-details h3 {
     margin-bottom: 10px;
 }
 
-.customer-comments{
+.customer-comments {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
 }
 
-.customer-comments h3{
+.customer-comments h3 {
     margin-bottom: 5px;
 }
 
 /* --------------------OTHER PRODUCTS YOU MIGHT LIKE----------------- */
-.top-banner-section{
+.top-banner-section {
     width: 1000px;
 }
 
 
-.product-food-header-title{
+.product-food-header-title {
     font-family: 'Libre Baskerville';
     font-size: 20px;
     font-style: normal;
     display: flex;
-    justify-content:flex-start;
+    justify-content: flex-start;
     margin-left: 85px;
 }
 
 /* End food-Header-Title*/
 
-.product-flex-parent{
+.product-flex-parent {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     /* margin: 30px; */
 }
 
-.flex-parent a{
+.flex-parent a {
     text-decoration: none;
     color: black;
 }
 
-.flex-child{
+.flex-child {
     width: 150px;
     height: 230px;
     /* border: 2px solid; */
@@ -198,17 +202,18 @@ overflow: hidden;
     background-color: white;
 }
 
-.flex-child:hover{
-    -webkit-box-shadow: -2px 2px 21px 5px rgba(0,0,0,0.3);
-    -moz-box-shadow: -2px 2px 21px 5px rgba(0,0,0,0.3);
-    box-shadow: -2px 2px 21px 5px rgba(0,0,0,0.3);
+.flex-child:hover {
+    -webkit-box-shadow: -2px 2px 21px 5px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: -2px 2px 21px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: -2px 2px 21px 5px rgba(0, 0, 0, 0.3);
 }
 
-.food-image{
+.food-image {
     position: relative;
     overflow: hidden;
 }
-.food-image-product img{
+
+.food-image-product img {
     width: 150px;
     height: 160px;
     border-radius: 7px;
@@ -218,14 +223,14 @@ overflow: hidden;
     cursor: pointer;
 }
 
-.food-image:hover img{
+.food-image:hover img {
     -moz-transform: scale(0.5);
     -webkit-transform: scale(0.5);
     transform: scale(1.2);
     max-height: 160px;
 }
 
-.food-title{
+.food-title {
     margin-top: -3px;
     font-weight: 450;
     font-size: 15px;
@@ -237,23 +242,23 @@ overflow: hidden;
     padding-right: 2px;
 }
 
-.pricetag{
+.pricetag {
     display: flex;
     font-size: 20px;
     align-items: center;
     text-align: left;
-    margin-top: -3px; 
-    padding-left: 2px;   
+    margin-top: -3px;
+    padding-left: 2px;
 }
 
-.former-price{
+.former-price {
     font-size: 9px;
     text-decoration: line-through;
-    margin-top: 1px; 
-    padding-left: 2px;   
+    margin-top: 1px;
+    padding-left: 2px;
 }
 
-.cart-icon{
+.cart-icon {
     margin-top: -25px;
     width: 25px;
     height: 25px;
@@ -262,13 +267,14 @@ overflow: hidden;
     margin-right: 19px;
     cursor: pointer;
 }
-   /* -----------------END OF OTHER PRODUCTS YOU MIGHT LIKE------------------- */
-@media screen and (max-width:600px){
-    .top-banner-section1{
+
+/* -----------------END OF OTHER PRODUCTS YOU MIGHT LIKE------------------- */
+@media screen and (max-width:600px) {
+    .top-banner-section1 {
         width: 100%;
     }
-  
-    .food-image-product img{
+
+    .food-image-product img {
         width: 130px;
         height: 160px;
         border-radius: 7px;
@@ -277,19 +283,24 @@ overflow: hidden;
         transition: ease-out .3s;
         cursor: pointer;
     }
-    #top-banner-product-section{
-       width: 150px;
-    }
-    .flex-child1{
+
+    #top-banner-product-section {
         width: 150px;
     }
-    #borderclass-mobile{
+
+    .flex-child1 {
         width: 150px;
     }
-    #foodtitle{
+
+    #borderclass-mobile {
+        width: 150px;
+    }
+
+    #foodtitle {
         width: 130px;
     }
-    #borderclass-mobile{
+
+    #borderclass-mobile {
         width: 150px;
         margin: 5px;
     }

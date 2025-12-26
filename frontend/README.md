@@ -1,6 +1,6 @@
 # 🥗 NediFoods — Full-Stack eCommerce Website
 
-**Live Site**: [https://nedifoods.co.uk](https://nedifoods.co.uk)  
+**Live Site**: [https://ecommerce-food-psi.vercel.app/] 
 **Backend API**: [https://nediecom.onrender.com/](https://nediecom.onrender.com/)
 
 NediFoods is a modern and fully functional eCommerce platform for a food business, built with the **MERN stack** (MongoDB, Express.js, React, Node.js). It supports full product management, Stripe payment integration, user authentication, admin dashboard, and order handling.

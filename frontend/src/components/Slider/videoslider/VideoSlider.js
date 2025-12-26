@@ -7,7 +7,6 @@ const mediaFiles = [
   { type: "image", src: "/media/images/image3.jpg" },
   { type: "image", src: "/media/images/image4.jpg" },
   { type: "image", src: "/media/images/image5.jpg" }
-  // { type: "video", src: "/media/Green.mp4" },
 ];
 
 const AUTO_PLAY_INTERVAL = 6000; // 5 seconds
@@ -39,14 +38,11 @@ export default function ImageSlider() {
         ) : (
           <video
             src={currentMedia.src}
-            autoPlay loop muted playsInline 
+            autoPlay loop muted playsInline
             className="slidecontent"
           />
         )}
       </div>
-      {/* <p className="slide-counter">
-        {currentIndex + 1} / {mediaFiles.length}
-      </p> */}
     </div>
   );
 }

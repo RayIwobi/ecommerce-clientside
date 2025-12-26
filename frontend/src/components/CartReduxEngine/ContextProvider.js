@@ -9,19 +9,19 @@ const initializer = () => {
 };
 
 
-export const CartContext = createContext() 
+export const CartContext = createContext()
 
-function ContextProvider({children}) {
+function ContextProvider({ children }) {
 
-    const [cart, dispatch] = useReducer(CartReducer, [], initializer)
+  const [cart, dispatch] = useReducer(CartReducer, [], initializer)
 
-    useEffect(() => {
+  useEffect(() => {
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart]);
 
   return (
     <div>
-      <CartContext.Provider value={{cart, dispatch}}>
+      <CartContext.Provider value={{ cart, dispatch }}>
         {children}
       </CartContext.Provider>
     </div>

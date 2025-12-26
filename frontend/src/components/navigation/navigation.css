@@ -1,12 +1,12 @@
-*{
+* {
     margin: 0;
 }
 
-.top-navigation{
+.top-navigation {
     width: 100%;
 }
 
-.middle-navigation1{
+.middle-navigation1 {
     width: 100%;
     top: 0;
     z-index: 999;
@@ -15,79 +15,86 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #FC6A03;/*#be535c; #ff1d58; #8458B3;*/
+    background-color: #FC6A03;
+    /*#be535c; #ff1d58; #8458B3;*/
     height: 50px;
     -webkit-box-shadow: 2px 8px 18px 1px rgba(66, 68, 90, 1);
     -moz-box-shadow: 2px 8px 18px 1px rgba(66, 68, 90, 1);
     box-shadow: 2px 8px 18px 1px rgba(66, 68, 90, 1);
 }
-@media screen and (max-width:600px){
-    .middle-navigation1{
+
+@media screen and (max-width:600px) {
+    .middle-navigation1 {
         display: none;
     }
 }
 
 
-.middle-navigation a{
+.middle-navigation a {
     text-decoration: none;
 }
 
-@media screen and (max-width: 600px){
-    .middle-navigation{
+@media screen and (max-width: 600px) {
+    .middle-navigation {
         height: 70px;
-        background-color: black;/*#bb123f;*/
+        background-color: black;
+        /*#bb123f;*/
     }
 }
 
-.logo-and-name{
+.logo-and-name {
     display: flex;
     align-items: center;
     margin-right: 60px;
 }
+
 /* logo and name area */
 
-@media only screen and (max-width: 600px){
-    .logo-and-name{
+@media only screen and (max-width: 600px) {
+    .logo-and-name {
         display: none;
     }
-  
+
 }
 
-.navigation-logo{
+.navigation-logo {
     width: 30px;
     height: 30px;
 }
-@media screen and (max-width: 600px){ 
-    .navigation-logo{
-        width:30px;
-        height:30px;
+
+@media screen and (max-width: 600px) {
+    .navigation-logo {
+        width: 30px;
+        height: 30px;
     }
-    .sitetitle h2{
+
+    .sitetitle h2 {
         font-size: 15px;
     }
 }
 
 
-.logo-and-name h2{
+.logo-and-name h2 {
     font-size: 19px;
     font-family: "Libre Baskerville";
     margin-left: 5px;
     color: white;
 }
-@media screen and (max-width:600px){
-    .logo-and-name h2{
+
+@media screen and (max-width:600px) {
+    .logo-and-name h2 {
         font-size: 29px;
     }
 }
 
-.nav-phrase{
+.nav-phrase {
     font-family: "Libre Baskerville";
     font-weight: 400;
     font-size: 12px;
     margin-right: 20px;
 }
 
-.nav-phrase h2{
+.nav-phrase h2 {
     font-weight: 500;
     color: rgb(240, 234, 224);
     display: flex;
@@ -96,8 +103,8 @@
     flex-wrap: wrap;
 }
 
-@media only screen and (max-width: 600px){
-    .nav-phrase h2{
+@media only screen and (max-width: 600px) {
+    .nav-phrase h2 {
         font-size: 16px;
         text-align: center;
         display: flex;
@@ -105,49 +112,50 @@
         padding-left: 10px;
     }
 
-    @media screen and (max-width:600px){
-        .nav-phrase h2{
+    @media screen and (max-width:600px) {
+        .nav-phrase h2 {
             display: none;
         }
     }
-    .nav-links a{
+
+    .nav-links a {
         color: black;
     }
 }
 
 
-.nav-links{
+.nav-links {
     display: flex;
     align-items: center;
     font-size: 10px;
     color: black;
 }
 
-@media screen and (max-width:600px){
-    .nav-links{
+@media screen and (max-width:600px) {
+    .nav-links {
         display: none;
     }
 }
 
-.nav-links a{
+.nav-links a {
     text-decoration: none;
     display: flex;
     color: white;
     font-size: 12px;
 }
 
-.nav-links h2{
+.nav-links h2 {
     text-decoration: none;
     display: flex;
     font-weight: 400;
 }
 
-.nav-links Links{
+.nav-links Links {
     display: flex;
     margin-right: 10px;
 }
 
-.link-border{
+.link-border {
     height: 30px;
     display: flex;
     align-items: center;
@@ -155,16 +163,16 @@
     margin-right: 10px;
 }
 
-.mobile-nav{
+.mobile-nav {
     color: white;
     background-color: black;
     margin-left: 30px;
     visibility: hidden;
 }
 
-@media screen and (max-width: 800px){
-    .mobile-nav{
-        visibility:visible;
+@media screen and (max-width: 800px) {
+    .mobile-nav {
+        visibility: visible;
         cursor: pointer;
         margin-top: -105px;
     }
@@ -172,10 +180,11 @@
 
 /**** Second Section logo search account area *****/
 
-.horizontal-rule{
+.horizontal-rule {
     margin-top: 50px;
 }
-.logo-search-accountareatop{
+
+.logo-search-accountareatop {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -184,8 +193,9 @@
     margin-top: 90px;
     margin-bottom: -30px;
 }
-@media screen and (max-width:600px){
-    .logo-search-accountareatop{
+
+@media screen and (max-width:600px) {
+    .logo-search-accountareatop {
         width: 100vw;
         margin-left: auto;
         margin-right: auto;
@@ -194,30 +204,31 @@
     }
 }
 
-.middlebar-logotop{
+.middlebar-logotop {
     width: 100px;
     height: 100px;
     margin-left: 10px;
 }
-@media screen and (max-width:600px){
-    .middlebar-logotop{
-       display: none;
+
+@media screen and (max-width:600px) {
+    .middlebar-logotop {
+        display: none;
     }
 }
 
-.nedifoods-titletop{
+.nedifoods-titletop {
     margin-left: -160px;
-    font-family:"Libre Baskerville";
+    font-family: "Libre Baskerville";
     font-size: 27px;
 }
 
 
-.search-bartop{
+.search-bartop {
     display: flex;
     align-items: center;
 }
 
-.search-bartop input{
+.search-bartop input {
     width: 650px;
     height: 40px;
     padding-right: 60px;
@@ -230,63 +241,66 @@
     background-color: rgb(225, 229, 233);
 }
 
-.groupside{
+.groupside {
     font-family: "Libre Baskerville";
     font-weight: 100;
 }
 
-    /* NOT USED BUT USEFUL FOR HIDING text
+/* NOT USED BUT USEFUL FOR HIDING text
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis; */
 
-@media screen and (max-width:600px){
-    .search-bartop{
+@media screen and (max-width:600px) {
+    .search-bartop {
         max-width: 250px;
         margin-left: auto;
         margin-right: auto;
     }
-    .search-bartop input{
+
+    .search-bartop input {
         width: 250px;
         margin-left: auto;
         margin-right: 20px;
     }
 }
 
-.search-bartop input:focus{
+.search-bartop input:focus {
     outline: none;
 }
 
-.searchicontop{
+.searchicontop {
     padding-top: 5px;
     margin-left: -70px;
     cursor: pointer;
 }
 
-.account-carttop{
+.account-carttop {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
-.account-carttop h3{
+
+.account-carttop h3 {
     color: black;
 }
 
-.personicon{
+.personicon {
     cursor: pointer;
 }
 
-.cart-items{
+.cart-items {
     display: flex;
     align-items: center;
 }
 
-.cart-items img{
+.cart-items img {
     width: 25px;
     height: 25px;
     cursor: pointer;
 }
-.cart-items h2{
+
+.cart-items h2 {
     background-color: red;
     width: 20px;
     height: 20px;
@@ -301,31 +315,34 @@
     padding-top: 3px;
 }
 
-@media screen and (max-width:600px){
-    .account-carttop{
+@media screen and (max-width:600px) {
+    .account-carttop {
         display: flex;
         align-items: center;
         justify-content: end;
         margin-right: 50px;
     }
-    .personicon{
+
+    .personicon {
         margin-right: 10px;
     }
-    .cart-items img{
+
+    .cart-items img {
         margin-left: 10px;
     }
-    .cart-items h2{
+
+    .cart-items h2 {
         margin-left: 25px;
     }
 }
 
-.helpText{
+.helpText {
     margin-right: 5px;
     cursor: pointer;
     color: black;
 }
 
-.link-border{
+.link-border {
     height: 30px;
     display: flex;
     align-items: center;
@@ -340,38 +357,41 @@
 /* Reset */
 * {
     box-sizing: border-box;
-  }
-  
-  .s-dropdown {
-    display: none; /* hide the dropdown completely on desktop */
+}
+
+.s-dropdown {
+    display: none;
+    /* hide the dropdown completely on desktop */
     margin: 0;
     padding: 0;
-  }
-  
-  @media screen and (max-width: 600px) {
+}
+
+@media screen and (max-width: 600px) {
     .s-dropdown {
-      display: block; /* show dropdown normally on mobile */
-      width: 100%;
-      margin-bottom: -50px;
-      -webkit-box-shadow: 2px 8px 18px 1px rgba(66, 68, 90, 1);
-      -moz-box-shadow: 2px 8px 18px 1px rgba(66, 68, 90, 1);
-      box-shadow: 2px 8px 18px 1px rgba(66, 68, 90, 1);
-  
+        display: block;
+        /* show dropdown normally on mobile */
+        width: 100%;
+        margin-bottom: -50px;
+        -webkit-box-shadow: 2px 8px 18px 1px rgba(66, 68, 90, 1);
+        -moz-box-shadow: 2px 8px 18px 1px rgba(66, 68, 90, 1);
+        box-shadow: 2px 8px 18px 1px rgba(66, 68, 90, 1);
+
     }
-    
+
     .s-dropdown-toggle {
-      width: 100%;
-      padding: 12px;
-      padding-right: 25px;
-      font-size: 30px;
-      background-color: #FC6A03;
-      color: white;
-      border: none;
-      text-align: right; 
-      cursor: pointer;
-      font-weight: 600;
+        width: 100%;
+        padding: 12px;
+        padding-right: 25px;
+        font-size: 30px;
+        background-color: #FC6A03;
+        color: white;
+        border: none;
+        text-align: right;
+        cursor: pointer;
+        font-weight: 600;
     }
-    .mobile-menu-toggle{
+
+    .mobile-menu-toggle {
         display: flex;
         align-items: center;
         background-color: #FC6A03;
@@ -380,64 +400,68 @@
         font-size: 20px;
         padding-left: 70px;
     }
-    .sitetitle{
+
+    .sitetitle {
         display: flex;
     }
-    .sitetitle span{
+
+    .sitetitle span {
         font-size: 19px;
     }
 
-    .navigation-logo{
+    .navigation-logo {
         width: 40px;
         height: 40px;
     }
-    
-    .s-dropdown-menu {
-      overflow: hidden;
-      background: #f9f9f9;
-      display: flex;
-      flex-direction: column;
-      transition: transform 0.3s ease, opacity 0.3s ease;
-    }  
-    
-    .s-dropdown-menu a {
-      padding: 12px;
-      font-size: 16px;
-      text-decoration: none;
-      color: #333;
-      border-top: 1px solid #eee;
-    }
-  
-    .s-dropdown-menu a:hover {
-      background-color: #FCAE1E;
-    }
-    
-    .s-dropdown-menu.open {
-      max-height: 500px; /* adjust to fit your links */
-      opacity: 1;
-      pointer-events: auto;
-    }
-  }
-  
 
-  /* === CATEGORIES DROPDOWN MENU IN THE TOP BAR === */
-  .categories-wrapper {
+    .s-dropdown-menu {
+        overflow: hidden;
+        background: #f9f9f9;
+        display: flex;
+        flex-direction: column;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .s-dropdown-menu a {
+        padding: 12px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #333;
+        border-top: 1px solid #eee;
+    }
+
+    .s-dropdown-menu a:hover {
+        background-color: #FCAE1E;
+    }
+
+    .s-dropdown-menu.open {
+        max-height: 500px;
+        /* adjust to fit your links */
+        opacity: 1;
+        pointer-events: auto;
+    }
+}
+
+
+/* === CATEGORIES DROPDOWN MENU IN THE TOP BAR === */
+.categories-wrapper {
     position: relative;
     display: inline-block;
-  }
-  
-  .categories-dropdown {
+}
+
+.categories-dropdown {
     cursor: pointer;
     color: white;
     font-size: 19px;
-  }
-  
-  .categories-dropdown-content {
+}
+
+.categories-dropdown-content {
     width: 200px;
     position: absolute;
-    top: 100%; /* position it directly below the trigger */
+    top: 100%;
+    /* position it directly below the trigger */
     left: 0;
-    background-color:#FC6A03;
+    background-color: #FC6A03;
     border-radius: 6px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 0;
@@ -446,29 +470,28 @@
     transform: translateY(10px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, visibility 0.3s ease-in-out;
     z-index: 10;
-  }
-  
-  .categories-wrapper:hover .categories-dropdown-content {
+}
+
+.categories-wrapper:hover .categories-dropdown-content {
     display: block;
     opacity: 1;
     transform: translateY(0);
-  }
-  
-  .categories-dropdown-content li {
+}
+
+.categories-dropdown-content li {
     list-style: none;
-  }
-  
-  .categories-dropdown-content a {
+}
+
+.categories-dropdown-content a {
     font-size: 16px;
     padding-left: 10px;
     color: white;
     display: block;
     text-decoration: none;
     transition: background-color 0.3s ease, color 0.3s ease;
-  }
-  
-  .categories-dropdown-content a:hover {
+}
+
+.categories-dropdown-content a:hover {
     color: black;
     background-color: #FCAE1E;
-  }
-  
+}

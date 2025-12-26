@@ -1,7 +1,5 @@
-
-
-@media screen and (max-width:600px){
-  .main-container{
+@media screen and (max-width:600px) {
+  .main-container {
     display: none;
   }
 }
@@ -17,14 +15,15 @@
 ul {
   margin: 0;
   list-style: none;
-  background-color:#FCAE1E;
+  background-color: #FCAE1E;
   display: flex;
 }
-ul li{
-  background-color:#FCAE1E;
+
+ul li {
+  background-color: #FCAE1E;
 }
 
-ul li a{
+ul li a {
   color: black;
   font-family: 'Libre Baskerville';
   font-size: 13px;
@@ -68,7 +67,7 @@ ul ul {
 }
 
 
-li:hover > ul {
+li:hover>ul {
   opacity: 1;
   transform: translateY(0);
   pointer-events: auto;
@@ -100,7 +99,7 @@ ul ul ul {
   padding: 10px 0;
 }
 
-ul ul li:hover > ul {
+ul ul li:hover>ul {
   opacity: 1;
   transform: translateX(0);
   pointer-events: auto;
@@ -145,7 +144,7 @@ ul ul ul li:hover {
   font-weight: 500;
 }
 
-.link-border{
+.link-border {
   height: 20px;
   padding-top: 5px;
 }
@@ -207,7 +206,7 @@ ul ul ul {
     transform: translateX(-10px);
   }
 
-  ul ul li:hover > ul {
+  ul ul li:hover>ul {
     transform: translateX(0);
   }
 }
@@ -220,17 +219,19 @@ ul ul ul {
 }
 
 .dropdown {
-  display: none; /* hide the dropdown completely on desktop */
+  display: none;
+  /* hide the dropdown completely on desktop */
   margin: 0;
   padding: 0;
 }
 
 @media screen and (max-width: 600px) {
   .dropdown {
-    display: block; /* show dropdown normally on mobile */
+    display: block;
+    /* show dropdown normally on mobile */
     width: 100%;
   }
-  
+
   .dropdown-toggle {
     width: 100%;
     padding: 12px;
@@ -244,7 +245,7 @@ ul ul ul {
     font-family: "Libre Baskerville";
     font-weight: 600;
   }
-  
+
   .dropdown-menu {
     overflow: hidden;
     transition: max-height 0.4s ease-in-out;
@@ -252,8 +253,8 @@ ul ul ul {
     background: #f9f9f9;
     display: flex;
     flex-direction: column;
-  }  
-  
+  }
+
   .dropdown-menu a {
     padding: 12px;
     font-size: 16px;
@@ -265,8 +266,9 @@ ul ul ul {
   .dropdown-menu a:hover {
     background-color: #FCAE1E;
   }
-  
+
   .dropdown-menu.open {
-    max-height: 500px; /* adjust to fit your links */
+    max-height: 500px;
+    /* adjust to fit your links */
   }
 }

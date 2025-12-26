@@ -19,22 +19,8 @@ app.use('/text', TestRouter)
 
 app.use(cors({
     origin: 'http://localhost:3000',
-    //origin:['http://localhost:3000','https://nedifoods-api.vercel.app', 'https://nedifoods.co.uk'],
     credentials:true,
 }))
-
-// app.use((req, res, next) => {
-//   res.header('Access-Control-Allow-Origin', 'https://nedifoods.co.uk');
-//   res.header('Access-Control-Allow-Methods', 'GET,POST,PUT,DELETE,OPTIONS');
-//   res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization');
-//   res.header('Access-Control-Allow-Credentials', 'true');
-
-//   if (req.method === 'OPTIONS') {
-//     return res.sendStatus(200); // CORS preflight success
-//   }
-
-//   next();
-// });
 
 
 
@@ -321,21 +307,6 @@ app.get('/categories', async (req, res) => {
     res.status(500).json({ message: 'Server error' });
   }
 });
-
-// app.get('/products', async (req, res) => {
-//   const { category, subcategory } = req.query;
-
-//   try {
-//     let query = {};
-//     if (category) query.category = category;
-//     if (subcategory) query.subcategory = subcategory;
-
-//     const products = await Product.find(query);
-//     res.json(products);
-//   } catch (err) {
-//     res.status(500).json({ message: 'Server error' });
-//   }
-// });
 
 
 //Saving the data before the stripe session

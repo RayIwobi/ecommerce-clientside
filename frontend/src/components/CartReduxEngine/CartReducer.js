@@ -12,14 +12,14 @@ export const totalPrice = (cart) => {
     }, 0);
     return parseFloat(total.toFixed(2));
 }
-    
 
-export const CartReducer = (state, action) => { 
-    switch(action.type){
+
+export const CartReducer = (state, action) => {
+    switch (action.type) {
         case "Add":
             //return [...state, action.product]  //...former single line but blind
 
-             const existingIndex = state.findIndex(p => p._id === action.product._id);
+            const existingIndex = state.findIndex(p => p._id === action.product._id);
             if (existingIndex >= 0) {
                 // Product already in cart — increase quantity
                 const updatedState = [...state];
@@ -27,7 +27,7 @@ export const CartReducer = (state, action) => {
                 return updatedState;
             } else {
                 // Product not in cart — add with quantity 1
-            return [...state, { ...action.product, productquantity: 1 }];
+                return [...state, { ...action.product, productquantity: 1 }];
             }
 
         case "Remove":
@@ -45,7 +45,7 @@ export const CartReducer = (state, action) => {
 
         default:
             return state;
-      
+
     }
 }
 

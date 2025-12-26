@@ -13,8 +13,8 @@ function UploadImage() {
     formData.append('image', imageFile);
 
     try {
-     // axios.post('http://localhost:10000/upload', formData , { withCredentials: true });
-      axios.post('https://nediecom-n82p.onrender.com/upload', formData , { withCredentials: true });
+      // axios.post('http://localhost:10000/upload', formData , { withCredentials: true });
+      axios.post('https://nediecom-n82p.onrender.com/upload', formData, { withCredentials: true });
       alert('Image uploaded!');
     } catch (err) {
       console.error(err);

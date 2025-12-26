@@ -1,22 +1,10 @@
-.sliderContainer{
+.sliderContainer {
   width: 50vw;
   height: 350px;
   padding-top: 50px;
 }
 
-.slidecontent{
+.slidecontent {
   width: 100%;
   height: 350px;
 }
-
-/* .media-wrapper {
-  width: 100%;
-  height: 400px;
-  background-color: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  border-radius: 8px;
-}
- */

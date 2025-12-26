@@ -8,22 +8,22 @@ function MainPage() {
 
   axios.defaults.withCredentials = true
   const handleLogout = () => {
-   axios.get('https://nediecom.onrender.com/auth/logout')
-    // axios.get('http://localhost/auth/logout')
-    .then(res => {
-      if(res.data.status){
-        navigate('/login')
-      }
-      else{}
-    })
-    .catch(err => {
-      console.log(err)
-    })
+    axios.get('https://nediecom.onrender.com/auth/logout')
+      // axios.get('http://localhost/auth/logout')
+      .then(res => {
+        if (res.data.status) {
+          navigate('/login')
+        }
+        else { }
+      })
+      .catch(err => {
+        console.log(err)
+      })
   }
   return (
     <div>
       This is home nedifoods
-      <button><Link to='/dashboard'>Dashboard</Link></button><br/><br/>
+      <button><Link to='/dashboard'>Dashboard</Link></button><br /><br />
       <button onClick={handleLogout}>Logout</button>
     </div>
   )

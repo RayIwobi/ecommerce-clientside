@@ -1,14 +1,15 @@
-@media screen and (max-width:600px){
-    .foodheader-mobilespace{
+@media screen and (max-width:600px) {
+    .foodheader-mobilespace {
         display: none;
     }
 }
 
-.for-mobile{
+.for-mobile {
     display: none;
 }
-@media screen and (max-width:600px){
-    .for-mobile{
+
+@media screen and (max-width:600px) {
+    .for-mobile {
         display: block;
         width: 90%;
         margin-left: auto;
@@ -16,14 +17,17 @@
         text-align: center;
         margin-top: 20px;
     }
-    .for-mobile img{
+
+    .for-mobile img {
         width: 30px;
         height: 20px;
     }
-    .for-mobile h4{
+
+    .for-mobile h4 {
         color: blue;
     }
-    .for-mobile-link{
+
+    .for-mobile-link {
         display: flex;
         align-items: center;
         justify-content: center;

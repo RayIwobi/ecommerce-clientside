@@ -1,4 +1,3 @@
-import './App.css';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Navigation from './components/navigation/Navigation';
 import ScrollToTop from './components/AboutusPolicy/ScrollToTop';
@@ -30,7 +29,6 @@ import SpicesandSeasonings from './components/DropDownMenu/MenuResults/Spicesand
 import SuccessPage from './components/productpage/SuccessPage';
 import CancelPage from './components/productpage/CancelPage';
 
-
 import Signup from './components/Authentication/Signup';
 import Login from './components/Authentication/Login';
 import MainPage from './components/Authentication/MainPage';
@@ -47,6 +45,7 @@ function App() {
         <Navigation/>
         <ScrollToTop/> {/* Automatically scroll pages to the top */}
         <Routes>
+          
           <Route path='/' element={<Home/>}/>
           <Route path='/uploads' element={<Imageupload/>}/>
           <Route path='/getitems/:_id' element={<UpdateProduct/>}/>
@@ -74,7 +73,6 @@ function App() {
           <Route path='/spices-and-seasoning' element={<SpicesandSeasonings/>}/>
           <Route path='/success' element={<SuccessPage/>}/>
           <Route path='/cancel' element={<CancelPage/>}/>
-
 
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/login' element={<Login/>}/>

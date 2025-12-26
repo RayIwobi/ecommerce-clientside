@@ -1,9 +1,9 @@
-.topdav{
+.topdav {
     overflow: hidden;
     position: relative;
 }
 
-.styling{
+.styling {
     overflow: hidden;
     position: relative;
     display: flex;
@@ -11,18 +11,18 @@
     transition: transform 0.3s ease-in-out;
 }
 
-.buttonnav{
+.buttonnav {
     display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
     padding: 4px;
 }
 
-.buttonnav button{
+.buttonnav button {
     border-radius: 50%;
     border: none;
 }
 
-.buttonnav button:hover{
+.buttonnav button:hover {
     background-color: rgb(219, 163, 163);
 }

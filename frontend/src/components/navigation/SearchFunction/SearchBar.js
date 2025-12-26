@@ -28,7 +28,7 @@ const SearchBar = () => {
         onChange={(e) => setQuery(e.target.value)}
         onKeyDown={handleKeyDown}
         className="search-input"
-        style={{fontFamily:'Libre Baskerville'}}
+        style={{ fontFamily: 'Libre Baskerville' }}
       />
       <button onClick={handleSearch} className="search-button">
         <FaSearch />

@@ -6,7 +6,7 @@ const mediaItems = [
   { type: 'video', src: '/assets/videos/vegy.mp4' },
   { type: 'image', src: '/assets/foodimg/spices.jpg' },
   { type: 'video', src: '/assets/videos/vegy.mp4' },
- 
+
 ];
 
 export default function MediaSlider() {

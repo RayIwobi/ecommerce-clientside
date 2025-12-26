@@ -121,18 +121,6 @@ function Comments() {
                 )}<br/>
             </div>
             ))}
-            {/* {getcomments.map((getcom) => (
-               <div key={getcom._id} className='comment-display-section'>
-                <div className='user-comment'>
-                <div className='name-time'>
-                    {getcom.user?.username}&nbsp;
-                    <span className='time'><small>{new Date(getcom.createdAt).toLocaleString()}</small></span>
-                </div>
-                <div>{getcom.comment}</div>
-                </div>
-            </div> 
-            ))} */}
-
         </div>
         </div>
     </div>

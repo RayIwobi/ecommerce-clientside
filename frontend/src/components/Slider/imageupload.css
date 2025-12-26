@@ -1,39 +1,40 @@
-*{
+* {
     margin: 0;
 }
 
-.main-containeru{
+.main-containeru {
     width: 900;
     margin-left: 40px;
     margin-top: 80px;
 }
 
-.main-containeru textarea{
+.main-containeru textarea {
     height: 100px;
     margin-top: 2px;
 }
 
-.display-section{
+.display-section {
     display: block;
     align-items: center;
 }
 
-.display-section img{
+.display-section img {
     width: 150px;
     height: 150px;
 }
 
-.table-section th{
+.table-section th {
     width: 400px;
     margin: 15px;
 
 }
-.table-section td{
+
+.table-section td {
     width: 400px;
     margin: 15px;
 }
 
-.description{
+.description {
     max-width: 50px;
     white-space: nowrap;
     overflow: hidden;
@@ -42,7 +43,7 @@
 
 
 /* CODE FOR PRODUCT UPDATE */
-.update-container{
+.update-container {
     width: 900px;
     display: flex;
     align-items: center;
@@ -52,26 +53,26 @@
     margin-left: 30px;
 }
 
-.update-container input{
+.update-container input {
     margin: 6px;
     width: 300px;
     height: 30px;
 }
 
-.update-container textarea{
+.update-container textarea {
     width: 300px;
     height: 200px;
     margin-bottom: 10px;
 }
 
-.button-controls{
+.button-controls {
     width: 200px;
     display: flex;
     margin-bottom: 50px;
-    
+
 }
 
-.button-controls button{
+.button-controls button {
     margin: 10px;
     width: 300px;
     height: 30px;
@@ -79,9 +80,10 @@
     color: rgb(22, 22, 156);
     font-size: 15px;
     font-weight: 600;
-    cursor: pointer;    
+    cursor: pointer;
 }
-.canni{
+
+.canni {
     margin: 10px;
     width: 100px;
     height: 30px;
@@ -89,17 +91,17 @@
     color: rgb(22, 22, 156);
     font-size: 15px;
     font-weight: 600;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
-.upload-section{
+.upload-section {
     display: flex;
     margin-top: 5px;
     margin-bottom: 25px;
 }
 
-.upload-section button{
-    background-color:#FCAE1E;
+.upload-section button {
+    background-color: #FCAE1E;
     color: white;
     font-size: 15px;
     border: none;
@@ -108,8 +110,8 @@
     cursor: pointer;
 }
 
-.upload-section button:hover{
-    background-color:white;
+.upload-section button:hover {
+    background-color: white;
     color: black;
     font-size: 15px;
     border: 2px solid orange;
@@ -117,8 +119,9 @@
     border-radius: 5px;
     cursor: pointer;
 }
-.upload-section button{
-    background-color:#FCAE1E;
+
+.upload-section button {
+    background-color: #FCAE1E;
     color: white;
     font-size: 15px;
     border: none;
@@ -128,22 +131,22 @@
 }
 
 /* Styling for upload link area */
-.uploadarea-product-link{
+.uploadarea-product-link {
     display: flex;
     align-items: center;
     justify-content: space-around;
     color: black;
 }
 
-.uploadarea-product-link a{
+.uploadarea-product-link a {
     font-size: 14px;
 }
 
-#uploads-container{
+#uploads-container {
     width: 300px;
 }
 
-#uploads-container select{
+#uploads-container select {
     width: 300px;
     height: 30px;
     border: 3px solid orange;
@@ -151,7 +154,7 @@
     font-size: 14px;
 }
 
-#uploads-container textarea{
+#uploads-container textarea {
     width: 300px;
     margin-top: 15px;
     border: 3px solid orange;
@@ -160,18 +163,19 @@
     padding-left: 5px;
 }
 
-#uploadsproduct-display{
+#uploadsproduct-display {
     width: 500px;
 }
 
-#uploadsproduct-display th, td:hover{
+#uploadsproduct-display th,
+td:hover {
     background-color: bisque;
 }
 
-.prodnme{
+.prodnme {
     width: 100px;
 }
 
-.tbody td{
+.tbody td {
     margin-bottom: 10px;
 }

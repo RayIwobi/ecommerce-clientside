@@ -14,60 +14,60 @@ const ForgotPassword = () => {
 
     const navigate = useNavigate()
 
-        useEffect(() => {
-                    const checkAuth = async () => {
-                        try{
-                            const res = await axios.get('https://nediecom.onrender.com/auth/verify', {
-                           // const res = await axios.get('http://localhost:10000/auth/verify', {
-                                withCredentials:true
-                            })
-                            if (res.data.status === true){
-                                navigate('/dashboard')
-                            }
-                        }
-                        catch(err){
-                            console.log(err)
-                        }
+    useEffect(() => {
+        const checkAuth = async () => {
+            try {
+                const res = await axios.get('https://nediecom.onrender.com/auth/verify', {
+                    // const res = await axios.get('http://localhost:10000/auth/verify', {
+                    withCredentials: true
+                })
+                if (res.data.status === true) {
+                    navigate('/dashboard')
                 }
-                checkAuth()
-        },[navigate])
-    
+            }
+            catch (err) {
+                console.log(err)
+            }
+        }
+        checkAuth()
+    }, [navigate])
+
 
     const handleSubmit = (e) => {
         e.preventDefault()
         setLoading(true)
 
-       axios.post('https://nediecom.onrender.com/auth/forgotpassword', {email})
-       //  axios.post('http://localhost:10000/auth/forgotpassword', {email})
-        .then((res) => {
-            if(res.data.status){
-                alert('check your email for reset link')
-                toast.success('Check your email for reset link')
-                navigate('/login')
-            }else{
-                alert(res.data.message || 'something went wrong, try again')
-            }
-        })
-        .catch((err) => {
-            console.log(err)
-            alert('server error, please try again')
-        })
+        axios.post('https://nediecom.onrender.com/auth/forgotpassword', { email })
+            //  axios.post('http://localhost:10000/auth/forgotpassword', {email})
+            .then((res) => {
+                if (res.data.status) {
+                    alert('check your email for reset link')
+                    toast.success('Check your email for reset link')
+                    navigate('/login')
+                } else {
+                    alert(res.data.message || 'something went wrong, try again')
+                }
+            })
+            .catch((err) => {
+                console.log(err)
+                alert('server error, please try again')
+            })
     }
 
     return (
         <div className='sign-up-container'>
             <ToastContainer position="top-right" autoClose={3000} />
-            
+
             <form className='sign-up-form' onSubmit={handleSubmit}>
 
                 <h2 className='forgotpwd'>Forgot Password</h2>
 
                 <label htmlFor='email'>Email: </label>
-                <input 
-                    type='email' 
+                <input
+                    type='email'
                     value={email}
-                    autoComplete='off' 
-                    placeholder='Email' 
+                    autoComplete='off'
+                    placeholder='Email'
                     onChange={(e) => setEmail(e.target.value)} /><br />
 
                 <button type='submit' disabled={loading} className='submit-button'>

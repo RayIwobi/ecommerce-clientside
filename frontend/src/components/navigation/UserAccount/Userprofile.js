@@ -36,22 +36,22 @@ const Userprofile = () => {
 
   //to use the current user's info
   axios.defaults.withCredentials = true
-       useEffect(() => {
-        // axios.get('http://localhost:10000/auth/verify' ,{ withCredentials: true })
-           axios.get('https://nediecom.onrender.com/auth/verify' ,{ withCredentials: true })
-          .then((res) => {
-              if(res.data.status){
-              }
-             
-          })
-      }, [])
+  useEffect(() => {
+    // axios.get('http://localhost:10000/auth/verify' ,{ withCredentials: true })
+    axios.get('https://nediecom.onrender.com/auth/verify', { withCredentials: true })
+      .then((res) => {
+        if (res.data.status) {
+        }
 
-      useEffect(() => {
-   // axios.get('http://localhost:10000/auth/dashboard',{ withCredentials: true })
-    axios.get('https://nediecom.onrender.com/auth/dashboard',{ withCredentials: true })
-    .then(res => setShowuser(res.data))
-    .catch(err => console.log(err))
-    },[])
+      })
+  }, [])
+
+  useEffect(() => {
+    // axios.get('http://localhost:10000/auth/dashboard',{ withCredentials: true })
+    axios.get('https://nediecom.onrender.com/auth/dashboard', { withCredentials: true })
+      .then(res => setShowuser(res.data))
+      .catch(err => console.log(err))
+  }, [])
 
   return (
     <div
@@ -59,15 +59,15 @@ const Userprofile = () => {
       ref={dropdownRef}
     >
       <div className="dropdown-toggle1" onClick={handleToggle}>
-        <img src={avatar} alt='dropdown' style={{width:'25px', height:'30px'}} /> 
-        </div>
+        <img src={avatar} alt='dropdown' style={{ width: '25px', height: '30px' }} />
+      </div>
       <div className="dropdown-menu1">
-        <div style={{fontWeight:'100', fontSize:'14px'}}>{setShowuser ? showuser.username : <div>Account</div>}</div>
-        <Link to='/signup' style={{fontWeight:'100', fontSize:'14px'}}>Signup</Link>
-        <hr className='hrule'/>
-        <Link to='/login' style={{fontWeight:'100', fontSize:'14px'}}>Login</Link>
-        <hr className='hrule'/>
-        <Link to='/dashboard' style={{fontWeight:'100', fontSize:'14px'}}>Dashboard</Link>
+        <div style={{ fontWeight: '100', fontSize: '14px' }}>{setShowuser ? showuser.username : <div>Account</div>}</div>
+        <Link to='/signup' style={{ fontWeight: '100', fontSize: '14px' }}>Signup</Link>
+        <hr className='hrule' />
+        <Link to='/login' style={{ fontWeight: '100', fontSize: '14px' }}>Login</Link>
+        <hr className='hrule' />
+        <Link to='/dashboard' style={{ fontWeight: '100', fontSize: '14px' }}>Dashboard</Link>
       </div>
     </div>
   );

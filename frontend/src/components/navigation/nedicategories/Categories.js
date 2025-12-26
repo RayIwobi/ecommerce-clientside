@@ -40,7 +40,7 @@ const DropdownMenu = () => {
           <Link to='nedihousehold'><li><h3 onClick={handleSubcategoryClick} id='nedigroup'>Nedi Household Items</h3></li></Link>
         </ul>
       )}
-    </div> 
+    </div>
   );
 };
 

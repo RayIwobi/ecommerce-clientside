@@ -7,7 +7,7 @@ function ImageViewer({ imageId }) {
   const fetchImage = async () => {
     try {
       const response = await axios.get(`https://nediecom-n82p.onrender.com/images/${imageId}`, {
-     // const response = await axios.get(`http://localhost:10000/images/${imageId}`, {
+        // const response = await axios.get(`http://localhost:10000/images/${imageId}`, {
         responseType: 'blob', // <== this is important!
       });
 

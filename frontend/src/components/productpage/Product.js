@@ -1,4 +1,4 @@
-import React, {useState, useEffect, useContext} from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import './product.css'
 import axios from 'axios'
 import { Link, useParams } from 'react-router-dom'
@@ -14,55 +14,55 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 function ProductPage() {
-    const {dispatch} = useContext(CartContext)//for cart from yousaf
+  const { dispatch } = useContext(CartContext)//for cart from yousaf
 
   const [items, setItems] = useState([])
   // const navigate = useNavigate()
 
-    const [product, setProduct] = useState('')
-    const [visiblecount, setVisiblecount] = useState(24) //limits the number of items displayed and controls the loadmore button
-  
+  const [product, setProduct] = useState('')
+  const [visiblecount, setVisiblecount] = useState(24) //limits the number of items displayed and controls the loadmore button
+
 
   const [showgotocartbtn, setShowgotocartbtn] = useState(() => { //the goto cart button appears only when add to cart is activated
     return sessionStorage.getItem('showgotocartbtn') === 'true'
   });
 
-  const {_id} = useParams() 
+  const { _id } = useParams()
 
-    //  useEffect(() => {
-    //     axios.get('http://localhost:10000/auth/verify' ,{ withCredentials: true })
-    //     //axios.get('https://nediecom.onrender.com/auth/verify')
-    //     .then((res) => {
-    //         if(res.data.status){
+  //  useEffect(() => {
+  //     axios.get('http://localhost:10000/auth/verify' ,{ withCredentials: true })
+  //     //axios.get('https://nediecom.onrender.com/auth/verify')
+  //     .then((res) => {
+  //         if(res.data.status){
 
-    //         }
-    //         else{
-    //             navigate('/login')
-    //         }
-    //     })
-    // }, [navigate])
+  //         }
+  //         else{
+  //             navigate('/login')
+  //         }
+  //     })
+  // }, [navigate])
 
   useEffect(() => {
     axios.get('https://nediecom.onrender.com/getitems')
-    //axios.get('http://localhost:10000/getitems')
-    .then(res => setItems(res.data))
-    .catch(err => console.log(err))
+      //axios.get('http://localhost:10000/getitems')
+      .then(res => setItems(res.data))
+      .catch(err => console.log(err))
   }, [])
 
 
   useEffect(() => {
- axios.get('https://nediecom.onrender.com/product/'+_id)
-   //    axios.get('http://localhost:10000/product/'+_id)
-    .then((res) => setProduct(res.data))
-    .catch((err) => console.log(err))
-  },[_id])
+    axios.get('https://nediecom.onrender.com/product/' + _id)
+      //    axios.get('http://localhost:10000/product/'+_id)
+      .then((res) => setProduct(res.data))
+      .catch((err) => console.log(err))
+  }, [_id])
 
-  
+
 
   const handleCart = () => { //for cart from yousaf
     setShowgotocartbtn(true) //for go to cart btn
     sessionStorage.setItem('showgotocartbtn', 'true') //to store the goto cart btn
-    dispatch({type: "Add", product:product})
+    dispatch({ type: "Add", product: product })
     toast.success('Item added to cart')
   }
 
@@ -83,15 +83,15 @@ function ProductPage() {
 
 
   return (
-    <div className='conni1'> 
-      <ToastContainer position="top-right" autoClose={3000} className='mobile-color'/> 
-      <hr className='horizontal-rule'/>
-    <div className='main-productcontent'>
-      <div className='inner-productcontent'>
-        <div className='product-image'>
-        <img src={`https://res.cloudinary.com/dvjnwualn/image/upload/${product.image}`} alt="" id='productImg'/>
-        </div> 
-        <div className='product-description'>
+    <div className='conni1'>
+      <ToastContainer position="top-right" autoClose={3000} className='mobile-color' />
+      <hr className='horizontal-rule' />
+      <div className='main-productcontent'>
+        <div className='inner-productcontent'>
+          <div className='product-image'>
+            <img src={`https://res.cloudinary.com/dvjnwualn/image/upload/${product.image}`} alt="" id='productImg' />
+          </div>
+          <div className='product-description'>
             <h3 className='product-title'>{product.productname}</h3>
             <h5 className='quantity'>Weight: {product.productweight}{product.weight}</h5>
             <h5 className='quantity'>Quantity: {product.productquantity}</h5>
@@ -100,27 +100,27 @@ function ProductPage() {
             <div className='product-price'>
               <h3>£{(product.productprice ?? 0).toFixed(2)}</h3>
               <h5>£{product.productoldprice}</h5>
-              </div>
-              
-            <button className='add-to-cartButton'
-            onClick={handleCart} style={{fontFamily:'Libre Baskerville'}}>Add to cart</button>
-
-            {showgotocartbtn && 
-            (<Link to='/cart'><button  className='add-to-cartButton' style={{fontFamily:'Libre Baskerville'}}>
-              Go to Cart</button></Link>)}
-            
-           <Link to='/'><h4 style={{fontFamily:'Libre Baskerville', fontWeight:'400', color:'blue', fontSize:'17px'}}><img src={handpointing} alt='' id='handpointing'/> Continue shopping</h4></Link>
-            <br/>
-            
-            <div className='product-details' style={{fontFamily:'Libre Baskerville'}}>
-                <h3 style={{fontSize:'20px'}}>Product Description</h3>
-                <p style={{fontFamily:'Poppins'}}>
-                {product.description}
-                </p>
             </div>
+
+            <button className='add-to-cartButton'
+              onClick={handleCart} style={{ fontFamily: 'Libre Baskerville' }}>Add to cart</button>
+
+            {showgotocartbtn &&
+              (<Link to='/cart'><button className='add-to-cartButton' style={{ fontFamily: 'Libre Baskerville' }}>
+                Go to Cart</button></Link>)}
+
+            <Link to='/'><h4 style={{ fontFamily: 'Libre Baskerville', fontWeight: '400', color: 'blue', fontSize: '17px' }}><img src={handpointing} alt='' id='handpointing' /> Continue shopping</h4></Link>
+            <br />
+
+            <div className='product-details' style={{ fontFamily: 'Libre Baskerville' }}>
+              <h3 style={{ fontSize: '20px' }}>Product Description</h3>
+              <p style={{ fontFamily: 'Poppins' }}>
+                {product.description}
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      {/* <div className='customer-comments'>
+        {/* <div className='customer-comments'>
         <hr/>
         <h3>Customer Reviews</h3>
                 <p>
@@ -151,48 +151,48 @@ function ProductPage() {
               
       </div> */}
 
-      <h2 className='buymore-title' id='otherproducts'>Some items you might like</h2>
-      {/* <h4 >Some items you might like</h4> */}
-      <div className='top-banner-section1' >
-            <div className='flex-parent' >
-            {/* -------------------------------------------------------- */}  
-              {items.slice(0, visiblecount).map((p) => {
+        <h2 className='buymore-title' id='otherproducts'>Some items you might like</h2>
+        {/* <h4 >Some items you might like</h4> */}
+        <div className='top-banner-section1' >
+          <div className='flex-parent' >
+            {/* -------------------------------------------------------- */}
+            {items.slice(0, visiblecount).map((p) => {
               return <div key={p._id} id='top-banner-product-section'>
-                    <Link to={`/product/${p._id}`} id='inner-position'>
-                      <div className='border-class' id='borderclass-mobile'>
-                      <div className='flex-child1'>
-                        <div className='food-image-product'>
-                          {/* <img src={img.image} alt="product-image" /> */}
-                          <img src={`https://res.cloudinary.com/dvjnwualn/image/upload/${p.image}`} alt="" />
-                          </div>
-                          <h2 className='food-titlee' id='foodtitle'>{p.productname}</h2>
-                          <h4 className='quantity'>Weight:{p.productweight}{p.weight}</h4>
-                          <div className='price-tag-both'>
+                <Link to={`/product/${p._id}`} id='inner-position'>
+                  <div className='border-class' id='borderclass-mobile'>
+                    <div className='flex-child1'>
+                      <div className='food-image-product'>
+                        {/* <img src={img.image} alt="product-image" /> */}
+                        <img src={`https://res.cloudinary.com/dvjnwualn/image/upload/${p.image}`} alt="" />
+                      </div>
+                      <h2 className='food-titlee' id='foodtitle'>{p.productname}</h2>
+                      <h4 className='quantity'>Weight:{p.productweight}{p.weight}</h4>
+                      <div className='price-tag-both'>
                         <div className='pricetag'>
-                        <h5>£{(p.productprice ?? 0).toFixed(2)}</h5>
+                          <h5>£{(p.productprice ?? 0).toFixed(2)}</h5>
                         </div>
                         <div className='former-price'>
-                        <h2 style={{fontWeight:'480'}}>£{p.productoldprice}</h2>
-                        </div>
-                        </div>
-                        <div>
-                        <button className='add-to-cart-btnz'>Add to Cart</button><br/>
+                          <h2 style={{ fontWeight: '480' }}>£{p.productoldprice}</h2>
                         </div>
                       </div>
+                      <div>
+                        <button className='add-to-cart-btnz'>Add to Cart</button><br />
                       </div>
-                  </Link>
+                    </div>
+                  </div>
+                </Link>
               </div>
             })}
-            
-        </div>
-        <div className='loadmore-btn'>
+
+          </div>
+          <div className='loadmore-btn'>
             {visiblecount < product.length && (
-              <button onClick={()=> setVisiblecount(visiblecount + 10)}>Load more</button>
+              <button onClick={() => setVisiblecount(visiblecount + 10)}>Load more</button>
             )}
           </div>
         </div>
-    </div>
-     
+      </div>
+
     </div>
   )
 }

@@ -1,13 +1,13 @@
-.uni-header{
-    font-family:" Libre Baskerville";
+.uni-header {
+    font-family: " Libre Baskerville";
     font-weight: 400;
 }
 
-.uni-body{
+.uni-body {
     font-family: "Poppins";
 }
 
-.sign-up-container{
+.sign-up-container {
     margin-top: 40px;
     display: flex;
     align-items: center;
@@ -15,31 +15,34 @@
     height: 100vh;
 }
 
-.dashboard-container{
+.dashboard-container {
     padding-top: 40px;
 }
 
-.sign-up-form{
+.sign-up-form {
     width: 350px;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 0 10px #FC6A03;
 }
-.sign-up-form h2,h5{
+
+.sign-up-form h2,
+h5 {
     font-family: 'Libre Baskerville';
 }
-label{
+
+label {
     font-family: 'Libre Baskerville';
 }
 
 
-label{
+label {
     display: block;
     margin-bottom: 8px;
 }
 
-input{
+input {
     width: 100%;
     padding: 8px;
     margin-bottom: 16px;
@@ -49,7 +52,7 @@ input{
     border-color: #FC6A03;
 }
 
-.submit-button{
+.submit-button {
     width: 100%;
     padding: 10px;
     background-color: black;
@@ -64,13 +67,13 @@ input{
     font-family: 'Libre Baskerville';
 }
 
-.submit-button:hover{
+.submit-button:hover {
     background-color: white;
     color: black;
-    border:#FC6A03 2px solid;
+    border: #FC6A03 2px solid;
 }
 
-#submit-button{
+#submit-button {
     width: 100%;
     height: 30px;
     background-color: black;
@@ -85,60 +88,63 @@ input{
     font-family: 'Libre Baskerville';
 }
 
-#submit-button:hover{
+#submit-button:hover {
     background-color: white;
     color: black;
-    border:#FC6A03 2px solid;
+    border: #FC6A03 2px solid;
 }
 
 
-.bottom-link{
+.bottom-link {
     display: flex;
     align-items: center;
-    font-family: "Libre Baskerville"; 
-    font-size: 14px;  
+    font-family: "Libre Baskerville";
+    font-size: 14px;
 }
-.bottom-link a{
+
+.bottom-link a {
     color: blue;
     font-size: 15px;
 }
 
 
-h2{
+h2 {
     text-align: center;
 }
 
-h5 a{
+h5 a {
     text-decoration: none;
 }
 
-h5{
+h5 {
     font-weight: 500;
     font-size: 14px;
 }
 
-.forgotpassword{
+.forgotpassword {
     text-decoration: none;
     color: blue;
     font-weight: 500;
     font-family: "Libre Baskerville";
 }
-.forgotpassword:hover{
+
+.forgotpassword:hover {
     color: black;
 }
 
-.homelink{
+.homelink {
     margin-top: 10px;
     font-weight: 600;
 }
-.forgotpwd{
+
+.forgotpwd {
     font-family: "Libre Baskerville";
     font-weight: 400;
     font-size: 20px;
     margin-bottom: 5px;
 }
 
-.update-profile{
+.update-profile {
     background-color: black;
     color: white;
     font-family: "Libre Baskerville";
@@ -148,104 +154,108 @@ h5{
     padding: 5px;
     margin-bottom: 30px;
 }
-.update-profile:hover{
+
+.update-profile:hover {
     background-color: white;
     border: 2px solid orange;
     color: black;
 }
 
-.homelink a{
+.homelink a {
     text-decoration: none;
     color: blue;
 }
 
-.dashboard-container{
+.dashboard-container {
     margin: 40px;
 }
 
-.user-details div{
+.user-details div {
     margin-bottom: 15px;
 }
 
-.user-details button{
+.user-details button {
     width: 150px;
     height: 40px;
     margin-top: 10px;
 }
 
-.dashboard-container h3{
+.dashboard-container h3 {
     font-size: 20px;
 }
 
-.dashboard-container h2{
+.dashboard-container h2 {
     font-size: 15px;
     color: blue;
     cursor: pointer;
 }
 
-.dashboard-container a{
+.dashboard-container a {
     text-decoration: none;
 }
 
-.dashboard-title{
+.dashboard-title {
     display: block;
     text-align: center;
     font-family: "Libre Baskerville";
 }
 
- .dashboard-title a{
+.dashboard-title a {
     font-size: 14px;
     font-weight: 200;
- }
+}
 
-.update-form{
+.update-form {
     width: 300px;
 }
 
-.logoutbutton{
-    width:80px;
-    height:40px;
-    font-weight:600;
-    color:white;
-    background-color:black;
+.logoutbutton {
+    width: 80px;
+    height: 40px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
     cursor: pointer;
     border-radius: 5px;
     margin-top: 10px;
     font-family: "Libre Baskerville";
 }
-.logoutbutton:hover{
+
+.logoutbutton:hover {
     border: 2px solid orange;
     background-color: white;
     color: black;
 }
 
-.profilearea{
+.profilearea {
     font-family: "Libre Baskerville";
 }
 
-.order-results{
+.order-results {
     border: 2px solid #ccc;
     padding: 10px;
     margin-bottom: 15px;
     background-color: rgb(245, 228, 197);
 }
-.order-results:hover{
+
+.order-results:hover {
     background-color: orange;
 }
 
 
-@media screen and (max-width:600px){
-    .dashboard-container{
+@media screen and (max-width:600px) {
+    .dashboard-container {
         width: 300px;
         margin-left: auto;
         margin-right: auto;
     }
-    .update-form input{
+
+    .update-form input {
         width: 300px;
     }
 }
 
-.update-form textarea{
+.update-form textarea {
     width: 290px;
     height: 40px;
     padding-left: 5px;
@@ -253,14 +263,14 @@ h5{
     border-radius: 7px;
 }
 
-.order-details{
+.order-details {
     margin-top: 40px;
 }
 
-.hr{
+.hr {
     margin-bottom: 30px;
 }
 
-#resetpassword-container{
+#resetpassword-container {
     margin-top: -120px;
 }
